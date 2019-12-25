@@ -49,8 +49,8 @@ for year in range(2009,2020):
         select_year.select_by_value(str(year))#年份選單項目定位
         
         #選擇月份
-        select_year = Select(browser.find_element_by_id('inputM'))#月份選單定位
-        select_year.select_by_value(str(mon))#月份選單項目定位
+        select_mon = Select(browser.find_element_by_id('inputM'))#月份選單定位
+        select_mon.select_by_value(str(mon))#月份選單項目定位
         
         #網頁資訊
 #        page_source = browser.page_source
