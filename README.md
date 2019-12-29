@@ -10,15 +10,8 @@
 
 > 不同瀏覽器模擬機[操作說明](https://selenium.dev/documentation/en/webdriver/browser_manipulation/)
 
-<font size=4>:pushpin:注意事項</font>
--
-- 可設定下載檔案儲存位置
-- 瀏覽器模擬機需填上正確路徑
-
-
-
-
-
-
-
-
+```
+📍注意事項
+  - 可設定下載檔案儲存位置
+  - 瀏覽器模擬機需填上正確路徑
+```
