@@ -22,6 +22,7 @@ def set_browser(save_path):
     options = webdriver.ChromeOptions() 
     prefs = {'profile.default_content_settings.popups': 0, 'download.default_directory': save_path}
     options.add_experimental_option('prefs', prefs)
+    options.add_argument("headless") #不顯示虛擬視窗
     
     # chrome 模擬器位置
     driverpath = '/Users/hsuan/opt/selenium chrome driver/chromedriver'
@@ -29,8 +30,8 @@ def set_browser(save_path):
     
     #連上網頁
     link = "https://www.tpex.org.tw/web/bond/tradeinfo/govbond/GovBondDaily_02.php?l=zh-tw"#網址
-    browser.get(link)#get方式進入網站
-    time.sleep(2)#網站有loading時間
+    browser.get(link) #get方式進入網站
+    time.sleep(2) #網站有loading時間
     
     return browser
 
